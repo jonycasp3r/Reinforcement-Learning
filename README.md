@@ -4,3 +4,7 @@ Again, we will use the cubic environment. Visualization methods are the same, as
 
 
 obv, reward, done, _ = env.step(action)
+state = obv[0:2]
+
+You can get the action by random selection: action = env.action_space.sample()
+The package includes rl_sandbox.py, where you can see basic random browsing, possibly initializing the Q values ​​table, visualization, and so on.
